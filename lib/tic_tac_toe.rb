@@ -61,10 +61,10 @@ def turn
   index = input_to_index(input)
   until valid_move?(index) == true
     turn
+  end
     move(index, current_player)
     display_board
-  else turn
-  end
+
 end
 
 def won?
