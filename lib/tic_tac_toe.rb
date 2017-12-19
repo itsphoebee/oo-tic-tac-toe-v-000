@@ -59,7 +59,7 @@ def turn
   puts "Please enter a move 1-9"
   input = gets.chomp
   index = input_to_index(input)
-  until valid_move?(index) == true
+  while valid_move?(index) == false
     turn
   end
     move(index, current_player)
